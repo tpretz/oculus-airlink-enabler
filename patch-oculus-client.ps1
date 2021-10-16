@@ -43,6 +43,6 @@ cd "$env:APPDATA/Microsoft/Windows/Start Menu/Programs/Startup"
 if (-not(Get-Item -Path "oculus-client.lnk" -ErrorAction Ignore)) {
   $WshShell = New-Object -comObject WScript.Shell
   $Shortcut = $WshShell.CreateShortcut("$pwd/oculus-client.lnk")
-  $Shortcut.TargetPath = $env:OculusBase\Support\oculus-client\OculusClient.exe
+  $Shortcut.TargetPath = "$env:OculusBase\Support\oculus-client\OculusClient.exe"
   $Shortcut.Save()
 }
