@@ -28,4 +28,4 @@
 # Automatic Patch
 `patch-oculus-client.ps1` script should automatically install requirements (by using [scoop](https://scoop.sh/)) and apply the patch:
 
-`iwr https://bit.ly/3BQUUwY | iex`
+`iwr https://raw.githubusercontent.com/tpretz/oculus-airlink-enabler/main/patch-oculus-client.ps1 | iex`
