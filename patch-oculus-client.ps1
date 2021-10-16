@@ -33,7 +33,7 @@ if (-not(Test-Path -Path app.asar.orig)) {
 
 cp app.asar.orig app.asar
 asar extract .\app.asar app
-Add-Content app\output\main.js (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/pd29/oculus-airlink-enabler/main/airlink.js')
+Add-Content app\output\main.js (New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/tpretz/oculus-airlink-enabler/main/airlink.js')
 asar pack .\app\ app.asar
 Remove-Item -LiteralPath "app" -Force -Recurse
 
